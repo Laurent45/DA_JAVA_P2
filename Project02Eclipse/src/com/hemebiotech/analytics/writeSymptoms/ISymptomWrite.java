@@ -4,5 +4,5 @@ import java.util.TreeMap;
 
 public interface ISymptomWrite {
 
-    void writeSymptomCount (TreeMap<String, Integer> symptomCount, String filePathOut);
+    void writeSymptomCount (String filePathOut);
 }

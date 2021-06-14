@@ -6,11 +6,17 @@ import java.util.TreeMap;
 
 public class WriteSymptomCountToFile implements ISymptomWrite {
 
+    TreeMap<String, Integer> symptomCount;
+
+    public WriteSymptomCountToFile(TreeMap<String, Integer> symptomCount) {
+        this.symptomCount = symptomCount;
+    }
+
     @Override
-    public void writeSymptomCount(TreeMap<String, Integer> symptomCount, String filePathOut) {
+    public void writeSymptomCount(String filePathOut) {
             try {
                 FileWriter out = new FileWriter(filePathOut);
-                symptomCount.entrySet()
+                this.symptomCount.entrySet()
                         .forEach(line -> {
                             try {
                                 out.write(line.getKey() + " : " + line.getValue() + "\n");
