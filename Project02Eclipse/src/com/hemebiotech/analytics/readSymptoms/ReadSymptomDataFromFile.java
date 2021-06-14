@@ -18,6 +18,7 @@ public class ReadSymptomDataFromFile implements ISymptomReader {
 	/**
 	 *
 	 * @param filePath a full or partial path to file with symptom strings in it, one per line
+	 *
 	 */
 	public ReadSymptomDataFromFile(String filePath) {
 		try {
@@ -27,12 +28,16 @@ public class ReadSymptomDataFromFile implements ISymptomReader {
 		}
 	}
 
+	/**
+	 * @see ISymptomReader
+	 * */
 	@Override
 	public List<String> getSymptoms() {
 		ArrayList<String> result = new ArrayList<>();
 		BufferedReader reader = new BufferedReader(this.fileRead);
 
 		String line = null;
+		//For each line, add in string list and check every time if adding work good
 		try {
 			line = reader.readLine();
 			while (line != null) {

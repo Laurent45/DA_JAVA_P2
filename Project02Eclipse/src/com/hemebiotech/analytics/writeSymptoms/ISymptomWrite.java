@@ -1,6 +1,8 @@
 package com.hemebiotech.analytics.writeSymptoms;
 
-import java.util.TreeMap;
+/**
+ * Write symptoms and their occurrence to a file
+ */
 
 public interface ISymptomWrite {
 
