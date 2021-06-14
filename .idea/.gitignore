@@ -1,0 +1,8 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+
+../.idea
+../out
+../DA_JAVA_P2.iml
+../result.out
