@@ -8,6 +8,7 @@ import com.hemebiotech.analytics.writeSymptoms.*;
 public class AnalyticsCounter {
 
 	public static void main(String[] args) {
+		// push soutenance
 		ISymptomReader readFileSymptom = new ReadSymptomDataFromFile("Project02Eclipse/symptoms.txt");
 		ISymptomCount countOccurrenceSymptom = new CountOccurrenceSymptom(readFileSymptom.getSymptoms());
 		ISymptomWrite writeSymptomsOccurrence = new WriteSymptomCountToFile(countOccurrenceSymptom.getSymptomCount());

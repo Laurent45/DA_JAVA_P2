@@ -39,12 +39,14 @@ high blood pressure
 inflamation
 dry mouth
 shortness of breath
+covid
 headache
 blindness
 dry mouth
 tremor
 stomach pain
 headache
+covid
 anxiety
 nausea
 dry mouth
@@ -98,3 +100,4 @@ anxiety
 anxiety
 cough
 blurred vision
+covid
